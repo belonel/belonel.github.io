@@ -1,0 +1,22 @@
+p {
+    font-family: Calibri;
+    text-transform: lowercase;
+}
+
+body {
+    background-color: beige;
+}
+
+h1 {
+    font-size: 50px;
+    color: red;
+    text-align: center;
+}
+
+h2 {
+    text-transform: uppercase;
+}
+
+.content-text {
+    margin: 100px;
+}
