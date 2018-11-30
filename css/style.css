@@ -1,22 +1,16 @@
-p {
-    font-family: Calibri;
-    text-transform: lowercase;
+h1, h2, h3, h4, h5, h6, p, b {
+    color: #233142;
 }
 
-body {
-    background-color: beige;
+p {
+    font-family: Calibri;
 }
 
 h1 {
     font-size: 50px;
-    color: red;
-    text-align: center;
+    text-align: left;
 }
 
-h2 {
-    text-transform: uppercase;
-}
-
-.content-text {
-    margin: 100px;
+.logo {
+    display: block;
 }
