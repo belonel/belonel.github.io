@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+	<canvas id='canvas' width=1080 height=720 style="border:1px solid #000000;">
+		Sorry, your browser is too old
+	</canvas>
+	<script>
+		var canvas = document.getElementById('canvas');
+		var ctx = canvas.getContext("2d");
+		var p0 = {x: 200, y: 200};
+			p1 = {x: 500, y: 500};
+			p2 = {x: 600, y: 300};
+			p3 = {x: 350, y: 700};
+		var i;
+		
+		function sum(p1, p2){
+			return {x: p1.x + p2.x, y: p1.y + p2.y};
+		}
+		function mul(p, t){
+			return {x: p.x*t, y: p.y*t};
+		}
+		
+		function lerp(p0, p1, t){
+			return sum(mul(p0, 1-t), mul(p1, t));
+		}
+		
+		ctx.fillStyle = '#ccffff';
+		ctx.fillRect(0, 0, canvas.width, canvas.height);
+		
+		/*function lines(p0, p1, p2){
+			ctx.beginPath();
+		}*/
+		function Frame() {
+			ctx.fillStyle = '#ccffff';
+			ctx.fillRect(0, 0, canvas.width, canvas.height);
+			ctx.fillStyle = 'blue';
+			ctx.beginPath();
+			
+			ctx.fillRect(p0.x-5, p0.y-5, 10, 10);
+			ctx.moveTo(p0.x, p0.y);
+			ctx.lineTo(p1.x, p1.y);
+			ctx.fillRect(p1.x-5, p1.y-5, 10, 10);	
+			
+			ctx.moveTo(p2.x, p2.y);
+			ctx.fillRect(p2.x-5, p2.y-5, 10, 10);
+			
+			ctx.lineTo(p3.x, p3.y);
+			ctx.fillRect(p3.x-5, p3.y-5, 10, 10);
+			
+			ctx.stroke();
+			for (i = 0; i <= 1; i+=0.01)
+				window.Draw(i);
+		}
+		
+		function Draw(t){
+			var p01 = lerp(p0, p1, t);
+				p12 = lerp(p1, p2, t);
+				p23 = lerp(p2, p3, t);
+				p012 = lerp(p01, p12, t);
+				p123 = lerp(p12, p23, t);
+				p = lerp(p012, p123, t);
+				
+			ctx.fillStyle = 'red';
+			ctx.beginPath();
+			moveTo(p.x, p.y);
+			ctx.fillRect(p.x - 1, p.y - 1, 3, 3);
+			
+			ctx.stroke();
+		}
+		
+		function move0(x, y){
+			p0.x = x;
+			p0.y = y;
+			Frame();
+		}	
+		function move1(x, y){
+			p1.x = x;
+			p1.y = y;
+			Frame();
+		}
+		
+		function move2(x, y){
+			p2.x = x;
+			p2.y = y;
+			Frame();
+		}	
+		function move3(x, y){
+			p3.x = x;
+			p3.y = y;
+			Frame();
+		}
+			
+		function dist(a, b){
+			return Math.sqrt((b.x - a.x)*(b.x - a.x) + (b.y - a.y)*(b.y - a.y));
+		}
+		
+		canvas.onmousedown = function(event) {
+			var x = event.offsetX;
+			var	y = event.offsetY;
+			var crs = {x: x, y: y};
+			var d = [dist(crs, p0), dist(crs, p1), dist(crs, p2), dist(crs, p3)];
+			var min = d[0];
+			var mindex = 0;
+			for (i = 0; i < 4; i++)
+				if(d[i] <= min)
+                    {
+                        mindex = i;
+                        min = d[i];
+                    }
+			console.log(mindex, d);
+			var key = 1;
+			this.onmousemove = function(event) {
+					var x = event.offsetX;
+					var	y = event.offsetY;
+					if (key == 1) {
+						if(mindex == 0)
+							move0(x, y);
+						else if(mindex == 1)
+							move1(x, y);
+						else if(mindex == 2)
+							move2(x, y);
+						else if(mindex == 3)
+							move3(x, y);
+						}
+			}
+			this.onmouseup = function() {
+				key = 0;
+			}
+		}
+		
+		window.Frame();
+	</script>
+</body>
+</html>
