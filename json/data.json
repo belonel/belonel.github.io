@@ -1,0 +1,82 @@
+{
+  "name": "bd",
+  "version": "1.0.0",
+  "dependencies": {
+    
+  },
+  "data_search":[ 
+    {"link": "https://www.raiffeisen.ru/retail/consumerloans/",
+      "description": "кредит наличными",
+      "keywoard": ["от 13 до 60 ежемесячных платежей","наличными","кредит","потребительский", "до 2 млн",
+                   "от 90 000 рублей","досрочное погашение","от 1 до 5 лет", "ставка 10,99 %"]
+    },
+    {"link": "https://www.raiffeisen.ru/retail/consumerloans/refinancing/",
+      "description": "рефинансирование кредитов",
+      "keywoard": ["рефинансирование", "ставка 10,99 %", "от 13 до 60 ежемесячных платежей",
+                   "финансовая защита кредита","до 2 млн", "от 90 000 рублей","досрочное погашение"]
+    },
+    {"link": "https://www.raiffeisen.ru/retail/consumerloans/auto/",
+      "description": "кредит на автомобиль",
+      "keywoard": ["без залога и поручителей", "отсрочка первого платежа на 2 месяца","целевой","от 1 до 5 лет",
+                   "нецелевой","кредит на автомобиль", "ставка 10,99 %", "кредит"]
+    },
+    {"link": "https://www.raiffeisen.ru/retail/cards/credit/",
+      "description": "кредитные карты",
+      "keywoard": ["кредитные карты","кэшбэк до 5 % на все покупки", "кредит"]
+    },
+    {"link": "https://www.raiffeisen.ru/retail/cards/credit/",
+      "description": "нецелеой кредит под залог жилья",
+      "keywoard": ["кредит", "от 1 до 15 лет","до 9 млн", "потребительский"]
+    },
+
+    {"link": "https://www.raiffeisen.ru/retail/mortgageloans/",
+      "description": "ипотечные программы",
+      "keywoard": ["ипотека", "рефинансирование", "нецелевой", "от 1 до 15 лет", "от 1 до 30 лет"]
+    },
+    {"link": "https://www.raiffeisen.ru/retail/cards/credit/110-days/",
+      "description": "кредитная карта 110 дней",
+      "keywoard": ["кредитные карты","0 рублей за снятие наличных","0 рублей за обслуживание карты",
+                    "110 дней без процентов", "ставка от 27%"]
+    },
+    {"link": "https://www.raiffeisen.ru/retail/cards/credit/visa-all-at-once/",
+      "description": "кредитная карта всё сразу",
+      "keywoard": ["кэшбэк до 5 % на все покупки","кредитные карты","до 600 000 рублей",
+                   "индивидуальный дизайн","оформление без справок о доходах"]
+    },
+    {"link": "https://www.raiffeisen.ru/retail/cards/credit/visa-classic-cash/",
+      "description": "наличная карта",
+      "keywoard": ["кредитные карты","до 600 000 рублей","ставка от 27%"]
+    },
+    {"link": "https://www.raiffeisen.ru/retail/cards/credit/visa-gold-travel-rewards/",
+      "description": "Золотая кредитная карта Travel Rewards",
+      "keywoard": ["кредитные карты","до 600 000 рублей","ставка от 27%",
+                   "до 52 дней беспроцентного льготного периода", "Travel Miles"]
+    },
+    {"link": "https://www.raiffeisen.ru/retail/cards/credit/mc-world-austrian-airlines/",
+      "description": "Austrian Airlines MasterCard World",
+      "keywoard": ["кредитные карты","ставка от 27%", "до 52 дней беспроцентного льготного периода",
+                   "Travel Miles","бесплатное страхование путешествующих"]
+    },
+    {"link": "https://www.raiffeisen.ru/retail/cards/credit/mc-gold-package/",
+      "description": "MasterCard Gold Package",
+      "keywoard": ["кредитные карты","ставка от 27%", "до 52 дней беспроцентного льготного периода",
+                    "бесплатное страхование путешествующих","до 600 000 рублей"]
+    },
+    {"link": "https://www.raiffeisen.ru/retail/cards/credit/visa-platinum-travel-rewards/",
+      "description": "Visa Platinum Travel Premium Rewards",
+      "keywoard": ["кредитные карты","ставка от 27%", "бесплатное страхование путешествующих",
+                   "до 1 млн","до 52 дней беспроцентного льготного периода", "пакет привилегий для комфорного путешествия"]
+    },
+    {"link": "https://www.raiffeisen.ru/retail/cards/credit/mc-world-black-edition-austrian-airlines/",
+      "description": "Austrian Airlines MasterCard World Black Edition",
+      "keywoard": ["кредитные карты","ставка от 27%", "до 1 млн","до 52 дней беспроцентного льготного периода",
+                   "пакет привилегий для комфорного путешествия", "Miles & More"]
+    },
+    {"link": "https://www.raiffeisen.ru/retail/cards/credit/mc-world-black-edition-austrian-airlines/",
+      "description": "Austrian Airlines MasterCard World Black Edition",
+      "keywoard": ["кредитные карты","ставка от 27%", "до 1 млн","до 52 дней беспроцентного льготного периода",
+        "пакет привилегий для комфорного путешествия", "Miles & More"]
+    }
+  ]
+
+}
